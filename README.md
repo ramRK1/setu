@@ -6,5 +6,5 @@ Run with a command like this:
 ```
 terraform init
 terraform plan (optional)
-terraform apply -var-file
+terraform apply -var-file=terraform.tfvars
 ```
