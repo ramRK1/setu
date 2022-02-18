@@ -22,6 +22,10 @@ variable "key_name2" {
   description = "Desired name of AWS key pair"
 }
 
+variable "bastion_private_pem" {
+  description = "Desired name of AWS key pair"
+}
+
 variable "aws_region" {
   description = "AWS region to launch servers."
   default     = "us-east-1"

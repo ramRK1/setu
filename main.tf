@@ -367,7 +367,7 @@ resource "aws_instance" "bastion" {
     # The default username for our AMI
     user = "ec2-user"
     host = self.public_ip
-    private_key = file("/home/ram_kamra/bastion")
+    private_key = file(var.bastion_private_pem)
     # The connection will use the local SSH agent for authentication.
   }
 
